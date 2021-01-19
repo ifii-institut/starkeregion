@@ -1,4 +1,0 @@
-[submodule "starkeregion"]
-	path = starkeregion
-	url = https://www.github.com/ifii-institut/starkeregion
-	branch = banner-api
