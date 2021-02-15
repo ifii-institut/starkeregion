@@ -899,7 +899,7 @@ function getResultsForRadiusZipCode($mein_plz, $umkreis_km){
 	* cos( radians( lng ) - radians($lng) ) + sin( radians($lat) ) * sin(radians(lat)) ) ) AS distance
 	FROM wp_cp_ad_geocodes
 	HAVING distance < $umkreis_km
-	ORDER BY distance";
+	ORDER BY distance LIMIT 5";
 	$row		= $sql_obj->sql_fetchAll($hpt_connection, $sql_query);
 
 	foreach ($row as $key1 => $val1){
